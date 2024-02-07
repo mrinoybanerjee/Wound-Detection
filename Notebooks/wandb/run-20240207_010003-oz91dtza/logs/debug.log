@@ -1,0 +1,145 @@
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Configure stats pid to 17683
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/.config/wandb/settings
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/settings
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_init.py:_log_setup():526] Logging user logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_010003-oz91dtza/logs/debug.log
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_010003-oz91dtza/logs/debug-internal.log
+2024-02-07 01:00:03,584 INFO    MainThread:17683 [wandb_init.py:_jupyter_setup():472] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x147889610>
+2024-02-07 01:00:03,585 INFO    MainThread:17683 [wandb_init.py:init():566] calling init triggers
+2024-02-07 01:00:03,585 INFO    MainThread:17683 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-07 01:00:03,585 INFO    MainThread:17683 [wandb_init.py:init():616] starting backend
+2024-02-07 01:00:03,585 INFO    MainThread:17683 [wandb_init.py:init():620] setting up manager
+2024-02-07 01:00:03,595 INFO    MainThread:17683 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-07 01:00:03,606 INFO    MainThread:17683 [wandb_init.py:init():628] backend started and connected
+2024-02-07 01:00:03,628 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-02-07 01:00:03,628 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-07 01:00:03,629 INFO    MainThread:17683 [wandb_init.py:init():720] updated telemetry
+2024-02-07 01:00:03,713 INFO    MainThread:17683 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-07 01:00:04,463 ERROR   MainThread:17683 [wandb_init.py:init():779] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-02-07 01:00:05,015 ERROR   MainThread:17683 [wandb_init.py:init():1194] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-02-07 01:00:14,847 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-02-07 01:00:14,847 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Configure stats pid to 17683
+2024-02-07 01:00:14,847 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/.config/wandb/settings
+2024-02-07 01:00:14,847 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/settings
+2024-02-07 01:00:14,848 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-07 01:00:14,848 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-07 01:00:14,848 INFO    MainThread:17683 [wandb_init.py:_log_setup():526] Logging user logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_010014-47a1kngu/logs/debug.log
+2024-02-07 01:00:14,848 INFO    MainThread:17683 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_010014-47a1kngu/logs/debug-internal.log
+2024-02-07 01:00:14,848 INFO    MainThread:17683 [wandb_init.py:init():566] calling init triggers
+2024-02-07 01:00:14,848 INFO    MainThread:17683 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-07 01:00:14,848 INFO    MainThread:17683 [wandb_init.py:init():616] starting backend
+2024-02-07 01:00:14,848 INFO    MainThread:17683 [wandb_init.py:init():620] setting up manager
+2024-02-07 01:00:14,855 INFO    MainThread:17683 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-07 01:00:14,856 INFO    MainThread:17683 [wandb_init.py:init():628] backend started and connected
+2024-02-07 01:00:14,867 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-02-07 01:00:14,867 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-07 01:00:14,867 INFO    MainThread:17683 [wandb_init.py:init():720] updated telemetry
+2024-02-07 01:00:14,910 INFO    MainThread:17683 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-07 01:00:15,384 ERROR   MainThread:17683 [wandb_init.py:init():779] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-02-07 01:00:15,449 ERROR   MainThread:17683 [wandb_init.py:init():1194] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2024-02-07 01:04:08,061 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-02-07 01:04:08,065 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Configure stats pid to 17683
+2024-02-07 01:04:08,065 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/.config/wandb/settings
+2024-02-07 01:04:08,065 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/settings
+2024-02-07 01:04:08,065 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-07 01:04:08,065 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-07 01:04:08,066 INFO    MainThread:17683 [wandb_init.py:_log_setup():526] Logging user logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_010408-r89v8nzr/logs/debug.log
+2024-02-07 01:04:08,066 INFO    MainThread:17683 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_010408-r89v8nzr/logs/debug-internal.log
+2024-02-07 01:04:08,066 INFO    MainThread:17683 [wandb_init.py:init():566] calling init triggers
+2024-02-07 01:04:08,066 INFO    MainThread:17683 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-07 01:04:08,067 INFO    MainThread:17683 [wandb_init.py:init():616] starting backend
+2024-02-07 01:04:08,067 INFO    MainThread:17683 [wandb_init.py:init():620] setting up manager
+2024-02-07 01:04:08,070 INFO    MainThread:17683 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-07 01:04:08,075 INFO    MainThread:17683 [wandb_init.py:init():628] backend started and connected
+2024-02-07 01:04:08,109 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-02-07 01:04:08,109 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-07 01:04:08,109 INFO    MainThread:17683 [wandb_init.py:init():720] updated telemetry
+2024-02-07 01:04:08,171 INFO    MainThread:17683 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-07 01:05:38,452 ERROR   MainThread:17683 [wandb_init.py:init():779] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-07 01:05:38,555 ERROR   MainThread:17683 [wandb_init.py:init():1194] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-07 01:06:40,080 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-02-07 01:06:40,081 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Configure stats pid to 17683
+2024-02-07 01:06:40,081 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/.config/wandb/settings
+2024-02-07 01:06:40,081 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/settings
+2024-02-07 01:06:40,081 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-07 01:06:40,081 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-07 01:06:40,082 INFO    MainThread:17683 [wandb_init.py:_log_setup():526] Logging user logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_010640-ns7wj02q/logs/debug.log
+2024-02-07 01:06:40,082 INFO    MainThread:17683 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_010640-ns7wj02q/logs/debug-internal.log
+2024-02-07 01:06:40,082 INFO    MainThread:17683 [wandb_init.py:init():566] calling init triggers
+2024-02-07 01:06:40,082 INFO    MainThread:17683 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-07 01:06:40,082 INFO    MainThread:17683 [wandb_init.py:init():616] starting backend
+2024-02-07 01:06:40,082 INFO    MainThread:17683 [wandb_init.py:init():620] setting up manager
+2024-02-07 01:06:40,086 INFO    MainThread:17683 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-07 01:06:40,088 INFO    MainThread:17683 [wandb_init.py:init():628] backend started and connected
+2024-02-07 01:06:40,092 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-02-07 01:06:40,092 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-07 01:06:40,092 INFO    MainThread:17683 [wandb_init.py:init():720] updated telemetry
+2024-02-07 01:06:40,148 INFO    MainThread:17683 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-07 01:08:10,396 ERROR   MainThread:17683 [wandb_init.py:init():779] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-07 01:08:10,475 ERROR   MainThread:17683 [wandb_init.py:init():1194] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-07 01:50:17,517 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-02-07 01:50:17,521 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Configure stats pid to 17683
+2024-02-07 01:50:17,521 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/.config/wandb/settings
+2024-02-07 01:50:17,522 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/settings
+2024-02-07 01:50:17,522 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-07 01:50:17,522 INFO    MainThread:17683 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-02-07 01:50:17,522 INFO    MainThread:17683 [wandb_init.py:_log_setup():526] Logging user logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_015017-6z83rw83/logs/debug.log
+2024-02-07 01:50:17,523 INFO    MainThread:17683 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/mrinoybanerjee/Desktop/Duke/Classes/Spring 2024/AIPI 540 - Deep Learning/Wound-Detection/Notebooks/wandb/run-20240207_015017-6z83rw83/logs/debug-internal.log
+2024-02-07 01:50:17,523 INFO    MainThread:17683 [wandb_init.py:init():566] calling init triggers
+2024-02-07 01:50:17,523 INFO    MainThread:17683 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-07 01:50:17,523 INFO    MainThread:17683 [wandb_init.py:init():616] starting backend
+2024-02-07 01:50:17,523 INFO    MainThread:17683 [wandb_init.py:init():620] setting up manager
+2024-02-07 01:50:17,528 INFO    MainThread:17683 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-02-07 01:50:17,531 INFO    MainThread:17683 [wandb_init.py:init():628] backend started and connected
+2024-02-07 01:50:17,539 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1294] probe notebook
+2024-02-07 01:50:17,540 INFO    MainThread:17683 [wandb_run.py:_label_probe_notebook():1304] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-02-07 01:50:17,540 INFO    MainThread:17683 [wandb_init.py:init():720] updated telemetry
+2024-02-07 01:50:17,634 INFO    MainThread:17683 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-07 01:51:47,922 ERROR   MainThread:17683 [wandb_init.py:init():779] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-02-07 01:51:48,432 ERROR   MainThread:17683 [wandb_init.py:init():1194] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 1176, in init
+    run = wi.init()
+  File "/Users/mrinoybanerjee/Library/Python/3.9/lib/python/site-packages/wandb/sdk/wandb_init.py", line 785, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
