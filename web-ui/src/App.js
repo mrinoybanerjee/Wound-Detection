@@ -65,8 +65,9 @@ function App() {
     const transposed = batched.transpose([0, 3, 1, 2]); // Correctly transposes to [1, channels, height, width]
 
     // Now, batched tensor is in the correct shape [1, 3, 224, 224]
-    const predictions = await model.executeAsync(transposed);
+    const predictions = await model.predict(transposed);
     const predictionsArray = await predictions.array();
+    console.log(predictions);
     const predictedClass = predictionsArray[0].indexOf(
       Math.max(...predictionsArray[0])
     );
