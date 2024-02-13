@@ -6,17 +6,16 @@ import * as tf from "@tensorflow/tfjs";
 
 const CLASSES = [
   "Abrasions",
-  "Burns",
   "Bruises",
-  "Laseration",
-  "Diabetic Wounds",
+  "Burns",
   "Cut",
+  "Diabetic Wounds",
+  "Laseration",
   "Normal",
   "Pressure Wounds",
   "Surgical Wounds",
   "Venous Wounds",
 ];
-
 function App() {
   const webcamRef = useRef(null);
   const [model, setModel] = useState(null);
@@ -29,7 +28,7 @@ function App() {
   };
 
   async function loadModel() {
-    const modelURL = `${process.env.PUBLIC_URL}/models/model.json`;
+    const modelURL = `${process.env.PUBLIC_URL}/model_files/model.json`;
     const model = await tf.loadGraphModel(modelURL);
     setModel(model);
     console.log("Model loaded");
@@ -66,9 +65,11 @@ function App() {
     const transposed = batched.transpose([0, 3, 1, 2]); // Correctly transposes to [1, channels, height, width]
 
     // Now, batched tensor is in the correct shape [1, 3, 224, 224]
-    const prediction = await model.predict(transposed);
-    const array = await prediction.array();
-    const predictedClass = array[0].indexOf(Math.max(...array[0]));
+    const predictions = await model.executeAsync(transposed);
+    const predictionsArray = await predictions.array();
+    const predictedClass = predictionsArray[0].indexOf(
+      Math.max(...predictionsArray[0])
+    );
 
     setIsLoading(false);
     setPredictedClass(CLASSES[predictedClass]);
