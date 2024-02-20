@@ -4,18 +4,9 @@ import Button from "@mui/material/Button";
 import { CssBaseline, Box, Snackbar, CircularProgress } from "@mui/material";
 import * as tf from "@tensorflow/tfjs";
 
-const CLASSES = [
-  "Abrasions",
-  "Bruises",
-  "Burns",
-  "Cut",
-  "Diabetic Wounds",
-  "Laseration",
-  "Normal",
-  "Pressure Wounds",
-  "Surgical Wounds",
-  "Venous Wounds",
-];
+// Local imports
+import { CLASSES } from "./constants";
+
 function App() {
   const webcamRef = useRef(null);
   const [model, setModel] = useState(null);
