@@ -12,10 +12,8 @@ This project consists of two main parts:
 
 ## Important directories
 
-- `model/`: Contains the machine learning model files, Jupyter notebooks, visualizations, and requirements.
-- `model/Notebooks`: Jupyter notebooks for model development and validation.
-- `model/Visualizations`: Visual assets used in the model's exploratory data analysis.
-- `model/model.pth`: The saved PyTorch model weights.
+- `models`: Store for all the trained models.
+- `scripts`: Store for all the scripts. The `model.py` script is used to trigger the training pipeline.
 - `web-ui/`: The source code for the React-based PWA.
 - `web-ui/public/model_files`: TensorFlow.js model files split into shards for optimized loading.
 
@@ -26,7 +24,8 @@ To get started with the project, clone the repository and navigate to the respec
 ### PyTorch Model
 
 1. Install dependencies: `pip install -r requirements.txt`
-2. Explore the Jupyter notebooks in `model/Notebooks` to understand the model development process.
+2. Explore the Jupyter notebooks in the `notebooks` directory to understand the model development process.
+3. To trigger the training pipeline, run `python scripts/model.py`.
 
 ### React Web UI
 
@@ -39,19 +38,26 @@ To get started with the project, clone the repository and navigate to the respec
 
 ```
 .
-├── Demo Slides.pdf
 ├── README.md
-├── model
-│   ├── Notebooks
-│   │   ├── modeling.ipynb
-│   │   ├── non_deep_learning_model.ipynb
-│   │   └── validation.ipynb
-│   ├── Visualizations
-│   │   └── Visualizations.png
-│   ├── model.pth
-│   └── requirements.txt
+├── constants.py
+├── data
+│   ├── outputs
+│   ├── processed
+│   │   └── class_distribution.png
+│   └── raw
+├── demo_slides.pdf
+├── models
+│   └── custom_resnet.pth
+├── notebooks
+│   ├── deep_learning_model.ipynb
+│   ├── non_deep_learning_model.ipynb
+│   └── validation.ipynb
+├── requirements.txt
+├── scripts
+│   ├── make_dataset.py
+│   └── model.py
+├── setup.py
 └── web-ui
-    ├── README.md
     ├── package-lock.json
     ├── package.json
     ├── public
@@ -89,9 +95,12 @@ To get started with the project, clone the repository and navigate to the respec
     └── src
         ├── App.css
         ├── App.js
+        ├── constants.js
         ├── index.css
         └── index.js
-8 directories, 45 files
+
+12 directories, 49 files
+
 ```
 
 ## Contributors
