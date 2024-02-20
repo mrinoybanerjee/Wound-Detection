@@ -1,4 +1,4 @@
-Data/
-Models/
+data/raw
 .DS_Store
 wandb
+env
