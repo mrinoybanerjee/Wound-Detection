@@ -72,7 +72,7 @@ function App() {
     const transposed = batched.transpose([0, 3, 1, 2]); // Correctly transposes to [1, channels, height, width]
 
     // Make a prediction
-    const predictions = await model.predict(transposed);
+    const predictions = await model.executeAsync(transposed);
     const predictionsArray = await predictions.array();
     console.log(predictions);
     const predictedClass = predictionsArray[0].indexOf(
