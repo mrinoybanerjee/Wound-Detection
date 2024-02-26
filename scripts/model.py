@@ -1,6 +1,7 @@
 from torch import nn, optim
 from torchvision import models
 from tqdm import tqdm
+from efficientnet_pytorch import EfficientNet
 
 # Local imports
 from make_dataset import *
@@ -18,15 +19,16 @@ def get_model() -> nn.Module:
     """
     # Model setup
     # Load a pretrained ResNet50 model
-    model = models.resnet50(pretrained=True)
-    for param in model.parameters():  # Freeze the parameters of the model
-        param.requires_grad = False
+    # model = models.resnet50(pretrained=True)
+    # for param in model.parameters():  # Freeze the parameters of the model
+    #     param.requires_grad = False
 
     # Get the number of classes in the dataset
     _, _, number_of_classes = prepare_dataset()
-
-    # Change the last layer of the model to match the number of classes
-    model.fc = nn.Linear(model.fc.in_features, number_of_classes)
+    model = EfficientNet.from_pretrained(
+        'efficientnet-b0',
+        num_classes=number_of_classes
+    )
     # Move the model to the specified device
     model = model.to(ML_TRAINING_DEVICE)
     return model
@@ -127,7 +129,7 @@ def main():
     # Loss and optimizer
     criterion = nn.CrossEntropyLoss()  # Define the loss function
     optimizer = optim.Adam(
-        model.fc.parameters(),
+        model.parameters(),
         lr=LEARNING_RATE
     )  # Define the optimizer
 
