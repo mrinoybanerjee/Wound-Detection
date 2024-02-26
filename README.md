@@ -43,25 +43,34 @@ Access trained models for this project here: https://drive.google.com/drive/fold
 
 ```
 .
+├── 540 Module Project 1.pdf
 ├── README.md
-├── constants.py
 ├── data
 │   ├── outputs
-│   ├── processed
-│   │   └── class_distribution.png
 │   └── raw
-├── demo_slides.pdf
+│       └── WoundDataset.zip
 ├── models
+│   ├── EfficientNet_model_fold_4.pth
+│   ├── Efficientnet_model_fold_4_tfjs
+│   │   ├── group1-shard1of4.bin
+│   │   ├── group1-shard2of4.bin
+│   │   ├── group1-shard3of4.bin
+│   │   ├── group1-shard4of4.bin
+│   │   └── model.json
 │   └── custom_resnet.pth
 ├── notebooks
-│   ├── deep_learning_model.ipynb
+│   ├── InceptionV3_Model.ipynb
+│   ├── Model_pth_to_tfjs.ipynb
+│   ├── ResNet50_Model.ipynb
+│   ├── efficient_net.ipynb
 │   ├── non_deep_learning_model.ipynb
-│   └── validation.ipynb
+│   └── resNet_34.ipynb
 ├── requirements.txt
 ├── scripts
+│   ├── constants.py
 │   ├── make_dataset.py
-│   └── model.py
-├── setup.py
+│   ├── model.py
+│   └── setup.py
 └── web-ui
     ├── package-lock.json
     ├── package.json
@@ -72,29 +81,10 @@ Access trained models for this project here: https://drive.google.com/drive/fold
     │   ├── logo512.png
     │   ├── manifest.json
     │   ├── model_files
-    │   │   ├── group1-shard10of23.bin
-    │   │   ├── group1-shard11of23.bin
-    │   │   ├── group1-shard12of23.bin
-    │   │   ├── group1-shard13of23.bin
-    │   │   ├── group1-shard14of23.bin
-    │   │   ├── group1-shard15of23.bin
-    │   │   ├── group1-shard16of23.bin
-    │   │   ├── group1-shard17of23.bin
-    │   │   ├── group1-shard18of23.bin
-    │   │   ├── group1-shard19of23.bin
-    │   │   ├── group1-shard1of23.bin
-    │   │   ├── group1-shard20of23.bin
-    │   │   ├── group1-shard21of23.bin
-    │   │   ├── group1-shard22of23.bin
-    │   │   ├── group1-shard23of23.bin
-    │   │   ├── group1-shard2of23.bin
-    │   │   ├── group1-shard3of23.bin
-    │   │   ├── group1-shard4of23.bin
-    │   │   ├── group1-shard5of23.bin
-    │   │   ├── group1-shard6of23.bin
-    │   │   ├── group1-shard7of23.bin
-    │   │   ├── group1-shard8of23.bin
-    │   │   ├── group1-shard9of23.bin
+    │   │   ├── group1-shard1of4.bin
+    │   │   ├── group1-shard2of4.bin
+    │   │   ├── group1-shard3of4.bin
+    │   │   ├── group1-shard4of4.bin
     │   │   └── model.json
     │   └── robots.txt
     └── src
@@ -104,8 +94,7 @@ Access trained models for this project here: https://drive.google.com/drive/fold
         ├── index.css
         └── index.js
 
-12 directories, 49 files
-
+12 directories, 39 files
 ```
 
 ## Converting Pytorch model to TensorflowJS
